@@ -29,11 +29,19 @@ The JKPCB site is built on a legacy ASP.NET Web Forms architecture that makes th
 pip install -r requirements.txt
 playwright install chromium
 ```
+
 ## Usage
+
 Interactive (single lookup):
+```bash
 python jkpcb.py
+```
+
 Bulk export (all districts, all stations, all years):
+```bash
 python jkpcb-bulk.py
+```
+
 
 ## Output Data Structure
 
