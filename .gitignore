@@ -1,0 +1,13 @@
+.venv/
+venv/
+env/
+JKPCB_AirQuality_Data/
+__pycache__/
+*.py[cod]
+*.pyo
+playwright-browsers/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
