@@ -8,7 +8,7 @@ The JKPCB site is built on a legacy ASP.NET Web Forms architecture that makes th
 
 - **Stateful Reloads (Postbacks):** The entire page re-renders on every dropdown change instead of using a modern API.
 - **Hidden Tokens:** Massive `__VIEWSTATE` strings are used to preserve selections between reloads.
-- **JavaScript Injection:** The actual data values are not in the HTML — they are injected into a JavaScript variable (`chartData12`) consumed by the AmCharts charting library.
+- **JavaScript Injection:** The actual data values are not in the HTML, they are injected into a JavaScript variable (`chartData12`) consumed by the AmCharts charting library.
 
 ## How It Works
 
@@ -29,6 +29,11 @@ The JKPCB site is built on a legacy ASP.NET Web Forms architecture that makes th
 pip install -r requirements.txt
 playwright install chromium
 ```
+## Usage
+Interactive (single lookup):
+python jkpcb.py
+Bulk export (all districts, all stations, all years):
+python jkpcb-bulk.py
 
 ## Output Data Structure
 
